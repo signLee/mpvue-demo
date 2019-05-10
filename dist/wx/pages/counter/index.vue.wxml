@@ -1,0 +1,23 @@
+<template name="69e9b3b5">
+  <view class="_div data-v-58423898 counter-warp">
+    <view class="_view data-v-58423898 section__title">movable-view区域小于movable-area</view>
+    <movable-area style="height: 200px; width: 200px; background: red;" class="_movable-area data-v-58423898">
+      <movable-view style="height: 50px; width: 50px; background: blue;" x="{{x}}" y="{{y}}" direction="all" class="_movable-view data-v-58423898"></movable-view>
+    </movable-area>
+    <view class="_view data-v-58423898 btn-area"><button size="mini" bindtap="tap" class="_button data-v-58423898">click me to move to (30px, 30px)</button></view>
+    <view class="_view data-v-58423898 section__title">movable-view区域大于movable-area</view>
+    <movable-area style="height: 100px; width: 100px; background: red;" class="_movable-area data-v-58423898">
+      <movable-view style="height: 200px; width: 200px; background: blue;" direction="all" class="_movable-view data-v-58423898"></movable-view>
+    </movable-area>
+    <view class="_view data-v-58423898 section__title">可放缩</view>
+    <movable-area style="height: 200px; width: 200px; background: red;" scale-area class="_movable-area data-v-58423898">
+      <movable-view style="height: 50px; width: 50px; background: blue;" direction="all" bindchange="onChange" bindscale="onScale" scale scale-min="0.5" scale-max="4" scale-value="2" class="_movable-view data-v-58423898"></movable-view>
+    </movable-area>
+    <view class="_p data-v-58423898">Vuex counter：{{ count }}</view>
+    <view class="_p data-v-58423898"><button bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}" class="_button data-v-58423898">+</button> <button bindtap="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}" class="_button data-v-58423898">-</button></view> <button bindtap="handleProxy" data-eventid="{{'2'}}" data-comkey="{{$k}}" class="_button data-v-58423898"> 调试扫码 </button> <video id="myVideo" src="http://wxsnsdy.tc.qq.com/105/20210/snsdyvideodownload?filekey=30280201010421301f0201690402534804102ca905ce620b1241b726bc41dcff44e00204012882540400&bizid=1023&hy=SH&fileparam=302c020101042530230204136ffd93020457e3c4ff02024ef202031e8d7f02030f42400204045a320a0201000400" controls="{{false}}" event-model="bubble" class="_video data-v-58423898">
+      <cover-view class="_cover-view data-v-58423898 controls">
+        <cover-view class="_cover-view data-v-58423898 time">00:00</cover-view>
+      </cover-view>
+    </video>
+  </view>
+</template>

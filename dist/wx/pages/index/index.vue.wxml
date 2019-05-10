@@ -1,0 +1,16 @@
+<template name="667c428b">
+  <view bindtap="handleProxy" data-eventid="{{'5'}}" data-comkey="{{$k}}" class="_div data-v-f432b7a4">
+    <view class="_div data-v-f432b7a4 userinfo" bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}">
+      <open-data type="userNickName" class="_open-data data-v-f432b7a4"></open-data>
+      <open-data type="userAvatarUrl" class="_open-data data-v-f432b7a4"></open-data>
+    </view> <progress percent="{{percent}}" show-info class="_progress data-v-f432b7a4" />
+    <view class="_p data-v-f432b7a4">{{year}}年已经过去了{{day}}天，{{percent}}%</view>
+    <form class="_form data-v-f432b7a4 form-container"><input type="text" class="_input data-v-f432b7a4 form-control" value="{{motto}}" placeholder="v-model" /> <input type="text" class="_input data-v-f432b7a4 form-control" value="{{motto}}" bindinput="handleProxy" placeholder="v-model" data-eventid="{{'1'}}" data-comkey="{{$k}}" /> <input type="text" class="_input data-v-f432b7a4 form-control" value="{{motto}}" bindblur="handleProxy" placeholder="v-model.lazy" data-eventid="{{'2'}}" data-comkey="{{$k}}" /></form> <button open-type="share" lang="zh_CN" bindgetuserinfo="handleProxy" data-eventid="{{'3'}}" data-comkey="{{$k}}" class="_button data-v-f432b7a4"> 分享页面 </button> <button open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="handleProxy" data-eventid="{{'4'}}" data-comkey="{{$k}}" class="_button data-v-f432b7a4"> 获取用户信息 </button>
+    <navigator url="/pages/test/main" class="_a data-v-f432b7a4 counter">去往测试页面</navigator>
+    <navigator url="/pages/counter/main" class="_a data-v-f432b7a4 counter">去往Vuex示例页面</navigator>
+    <view class="_div data-v-f432b7a4 all">
+      <view class="_div data-v-f432b7a4 left"></view>
+      <view class="_div data-v-f432b7a4 right"></view>
+    </view>
+  </view>
+</template>
