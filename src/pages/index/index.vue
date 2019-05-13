@@ -31,6 +31,7 @@
 </template>
 
 <script>
+import { get } from "@/src/utils";
 import card from '@/components/card'
 import store from '@/pages/counter/store'
 
@@ -89,6 +90,11 @@ export default {
     }
   },
   mounted () {
+     const data = get("/address/deleteAction", {
+        id: id
+      }).then((res) => {
+        console.log(res)
+      });
   },
   onShow () {
     console.log(store)
